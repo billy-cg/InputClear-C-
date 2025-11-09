@@ -29,9 +29,7 @@ La clase InputClear está diseñada con métodos static, lo que significa que no
 
 
 
-#include <iostream>
-#include "InputClear.h"
-int main() {
+
     
     // Pide un entero entre 1 y 10. No continúa hasta que la entrada sea válida.
     
@@ -40,12 +38,10 @@ int main() {
     std::cout << "Edad ingresada: " << edad << std::endl;
 
     return 0;
-}
 
 
-#include <iostream>
-#include "InputClear.h"
-int main() {
+
+
     
     // Pide un caracter, solo permite 'a', 'b', o 'c'.
     
@@ -54,12 +50,9 @@ int main() {
     std::cout << "Opcion seleccionada: " << opcion << std::endl;
 
     return 0;
-}
 
-#include <iostream>
-#include "InputClear.h"
 
-int main() {
+
     
     // Pide 's' o 'n' (o 'S'/'N') y devuelve true/false.
    
@@ -72,12 +65,9 @@ int main() {
     }
 
     return 0;
-}
 
-#include <iostream>
-#include "InputClear.h"
 
-int main() {
+
     
     // Pide un número decimal de forma segura.
     
@@ -86,4 +76,4 @@ int main() {
     std::cout << "Precio ingresado: " << precio << std::endl;
 
     return 0;
-}
+
