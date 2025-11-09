@@ -28,23 +28,29 @@ Implementación y Uso (Ejemplos)
 La clase InputClear está diseñada con métodos static, lo que significa que no necesitas crear una instancia para usarla. Simplemente llama al método directamente.
 
 
+
 #include <iostream>
 #include "InputClear.h"
-
 int main() {
+    
     // Pide un entero entre 1 y 10. No continúa hasta que la entrada sea válida.
+    
     int edad = InputClear::leerIntEnRango("Ingrese su edad (1-100): ", 1, 100);
+   
     std::cout << "Edad ingresada: " << edad << std::endl;
 
     return 0;
 }
 
+
 #include <iostream>
 #include "InputClear.h"
-
 int main() {
+    
     // Pide un caracter, solo permite 'a', 'b', o 'c'.
+    
     char opcion = InputClear::leerCharOpciones("Seleccione una opcion (a/b/c): ", "abc");
+   
     std::cout << "Opcion seleccionada: " << opcion << std::endl;
 
     return 0;
@@ -54,7 +60,9 @@ int main() {
 #include "InputClear.h"
 
 int main() {
+    
     // Pide 's' o 'n' (o 'S'/'N') y devuelve true/false.
+   
     bool resultado = InputClear::confirmar("Desea guardar los cambios (s/n)? ");
     
     if (resultado) {
@@ -70,8 +78,11 @@ int main() {
 #include "InputClear.h"
 
 int main() {
+    
     // Pide un número decimal de forma segura.
+    
     float precio = InputClear::leerFloat("Ingrese el precio: ");
+   
     std::cout << "Precio ingresado: " << precio << std::endl;
 
     return 0;
