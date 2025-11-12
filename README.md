@@ -1,13 +1,14 @@
 # InputClear C++
-Manejo de Errores Automático: Evita la necesidad de repetir código para manejar cin.fail(), cin.clear(), y cin.ignore() en cada lectura.
-InputClear es una sencilla clase estática en C++ diseñada para simplificar y robustecer la lectura de datos (enteros, flotantes, caracteres y cadenas) desde la entrada estándar (cin), manejando de forma automática los errores comunes de stream (como cin.fail(), cin.clear() y el vaciado del buffer con cin.ignore()).
+Manejo de Errores Automático: Evita la necesidad de repetir código para manejar cin.fail(), cin.clear(), y cin.ignore() en cada lectura. 
 
-El objetivo principal es encapsular la lógica de validación de entrada, haciendo que el código principal sea más limpio y se concentre únicamente en la lógica del negocio.
+Es una clase estática en C++ diseñada para simplificar la lectura de datos (enteros, flotantes, caracteres y cadenas) desde la entrada estándar (cin), manejando de forma automática los errores comunes de stream (como cin.fail(), cin.clear() y el vaciado del buffer con cin.ignore()).
 
-Origen
-Este proyecto surge como parte de un Trabajo Práctico (TP) de la universidad, con la finalidad de aplicar un patrón de diseño que centralice la gestión de errores de entrada, proporcionando una solución robusta y reusable para futuros proyectos.
+El objetivo principal es encapsular la lógica de validación de entrada, haciendo que el código principal sea más limpio y se ejecute en una linea sola donde muestre mensaje, pida la entrada de datos y sean validados.
 
-Funcionalidad Clave
+
+Este proyecto surge como parte de un Trabajo Práctico (TP) de la universidad, con la finalidad de aplicar un patrón de diseño que centralice la gestión de errores de entrada, proporcionando una solución y sea reusable para futuros proyectos.
+
+Funcionalidad 
 Manejo de Errores Automático: Evita la necesidad de repetir código para manejar cin.fail(), cin.clear(), y cin.ignore() en cada lectura.
 
 Lectura de Tipos Básicos: Métodos para leer de forma segura int, float, char, std::string.
@@ -22,7 +23,7 @@ Confirmación Booleana: confirmar simplifica la pregunta de Sí/No.
 
 Lectura de Líneas Completas: leerLinea para leer una línea completa (incluyendo espacios) con validación de cadena vacía.
 
-Diseño Modificable: La clase es una base que puedes modificar y extender fácilmente para adaptarse a tus necesidades específicas de validación.
+Diseño Modificable: La clase es una base que puedes modificar y extender fácilmente para adaptarse a necesidades específicas de validación.
 
 Implementación y Uso (Ejemplos)
 La clase InputClear está diseñada con métodos static, lo que significa que no necesitas crear una instancia para usarla. Simplemente llama al método directamente.
@@ -66,7 +67,7 @@ La clase InputClear está diseñada con métodos static, lo que significa que no
 
     return 0;
 
-
+    
 
     
     // Pide un número decimal de forma segura.
