@@ -1,4 +1,5 @@
-#pragma once
+#ifndef INPUTCLEAR_H
+#define INPUTCLEAR_H
 #include <string>
 
 class InputClear {
@@ -16,3 +17,4 @@ public:
     
     static bool confirmar(const char* mensaje);  
 };
+#endif
